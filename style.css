@@ -1,144 +1,169 @@
-/* ================================
-   GLOBAL RESET
-================================ */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* ================================
-   BODY STYLING
-================================ */
+/* =========================
+   GENERAL PAGE STYLING
+========================= */
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: linear-gradient(to right, #eef2f3, #ffffff);
-    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
     line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #222;
 }
 
-/* ================================
+/* =========================
    NAVIGATION BAR
-================================ */
+========================= */
 nav {
-    background: #0a2a43;
+    background-color: #333;
     padding: 14px;
+    text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    text-align: center;
 }
 
 nav a {
-    color: #ffffff;
+    color: white;
+    margin: 0 15px;
     text-decoration: none;
-    margin: 8px 12px;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 6px 10px;
-    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
     transition: 0.3s ease;
-    display: inline-block;
 }
 
 nav a:hover {
-    background: #1e90ff;
-    color: #fff;
+    color: #00c3ff;
+    text-decoration: underline;
+    letter-spacing: 1px;
 }
 
-/* ================================
-   MAIN CONTAINER
-================================ */
-.container {
-    max-width: 1100px;
-    margin: 30px auto;
-    background: #ffffff;
-    padding: 30px;
+/* =========================
+   PAGE CONTENT SECTIONS
+========================= */
+.content {
+    padding: 25px;
+    background-color: white;
+    margin: 20px auto;
     border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
-/* ================================
+/* =========================
    HEADINGS
-================================ */
+========================= */
 h1 {
+    color: #333;
+    text-transform: capitalize;
     text-align: center;
-    color: #0a2a43;
     margin-bottom: 20px;
-    font-size: 32px;
 }
 
 h2 {
-    color: #1e90ff;
+    color: #444;
+    text-transform: uppercase;
+    border-bottom: 2px solid #00c3ff;
+    padding-bottom: 5px;
     margin-top: 20px;
-    margin-bottom: 10px;
-    border-left: 5px solid #1e90ff;
-    padding-left: 10px;
 }
 
-/* ================================
+h3, h4, h5, h6 {
+    color: #555;
+}
+
+/* =========================
    PARAGRAPHS
-================================ */
+========================= */
 p {
-    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
     margin-bottom: 15px;
-    text-align: justify;
 }
 
-/* ================================
-   IMAGES
-================================ */
+/* =========================
+   HIGHLIGHT TEXT
+========================= */
+.highlight {
+    color: #00c3ff;
+    font-weight: bold;
+}
+
+/* =========================
+   LISTS
+========================= */
+ul {
+    list-style-type: square;
+    color: #333;
+    padding-left: 20px;
+}
+
+ol {
+    color: #333;
+    padding-left: 20px;
+}
+
+/* =========================
+   IMAGES (ADDED IMPROVEMENT)
+========================= */
 img {
     width: 350px;
     float: right;
     margin: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
-img:hover {
-    transform: scale(1.05);
-}
-
-/* ================================
-   LINKS (inside content)
-================================ */
-.container a {
-    color: #1e90ff;
-    text-decoration: none;
-}
-
-.container a:hover {
-    text-decoration: underline;
-}
-
-/* ================================
-   BUTTON STYLE (if you use buttons later)
-================================ */
+/* =========================
+   BUTTONS (ADDED)
+========================= */
 button {
-    background: #1e90ff;
+    background-color: #00c3ff;
     color: white;
     border: none;
     padding: 10px 15px;
-    border-radius: 6px;
+    border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
     transition: 0.3s ease;
 }
 
 button:hover {
-    background: #0a2a43;
+    background-color: #333;
 }
 
-/* ================================
+/* =========================
+   LINKS INSIDE CONTENT
+========================= */
+.content a {
+    color: #00c3ff;
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* =========================
    RESPONSIVE DESIGN
-================================ */
+========================= */
 @media (max-width: 768px) {
     nav a {
         display: inline-block;
-        margin: 5px;
-        font-size: 12px;
+        margin: 8px;
+        font-size: 11px;
     }
 
     img {
@@ -148,12 +173,8 @@ button:hover {
         width: 90%;
     }
 
-    .container {
-        margin: 15px;
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 24px;
+    .content {
+        margin: 10px;
+        padding: 15px;
     }
 }

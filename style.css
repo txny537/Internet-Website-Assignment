@@ -1,0 +1,159 @@
+/* ================================
+   GLOBAL RESET
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================================
+   BODY STYLING
+================================ */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(to right, #eef2f3, #ffffff);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ================================
+   NAVIGATION BAR
+================================ */
+nav {
+    background: #0a2a43;
+    padding: 14px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 8px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: #1e90ff;
+    color: #fff;
+}
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* ================================
+   HEADINGS
+================================ */
+h1 {
+    text-align: center;
+    color: #0a2a43;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+h2 {
+    color: #1e90ff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-left: 5px solid #1e90ff;
+    padding-left: 10px;
+}
+
+/* ================================
+   PARAGRAPHS
+================================ */
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* ================================
+   IMAGES
+================================ */
+img {
+    width: 350px;
+    float: right;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* ================================
+   LINKS (inside content)
+================================ */
+.container a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+/* ================================
+   BUTTON STYLE (if you use buttons later)
+================================ */
+button {
+    background: #1e90ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #0a2a43;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+@media (max-width: 768px) {
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    img {
+        float: none;
+        display: block;
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .container {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

@@ -43,8 +43,9 @@ nav a {
 }
 
 nav a:hover {
-    background: #1e90ff;
-    color: #fff;
+    color: #00c3ff;
+    text-decoration: underline;
+    letter-spacing: 1px;
 }
 
 /* ================================
